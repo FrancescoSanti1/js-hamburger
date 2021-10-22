@@ -9,7 +9,7 @@ console.log(menu);
 console.log(chiudi);
 
 
-// clicco su burger e si apre il menu burger che è in display none
+// clicco su burger e si apre il menu burger aggiungendo la classe .active, questo permette anche al menu di sparire quando il viewport supera i 1000px
 
 burger.addEventListener("click",
     
@@ -19,7 +19,7 @@ burger.addEventListener("click",
 )
 
 
-// clicco sulla croce e si chiude il menu burger che è in display block
+// clicco sulla croce e si chiude il menu burger togliendo la classe .active
 
 chiudi.addEventListener("click",
     
@@ -27,6 +27,3 @@ chiudi.addEventListener("click",
         menu.className = "hamburger-menu";
     }
 )
-
-// con il menu burger ancora aperto, se allargo la finestra si chiude comunque e torna la navigazione estesa
-
